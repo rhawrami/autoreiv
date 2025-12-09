@@ -11,7 +11,7 @@ const (
 	arString
 	arFloat
 	arBool
-	arDate
+	arDate2
 )
 
 func InferType(val []byte) arType {
@@ -31,7 +31,7 @@ func InferType(val []byte) arType {
 	dateMatchShort, _ := regexp.Match(`\d{1,4}[-\/]\d{1,4}[-\/]\d{1,4}`, val)
 	dateMatchLong, _ := regexp.Match(`(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]+ \d{1,2},?\s\d{1,4}`, val)
 	if dateMatchShort || dateMatchLong {
-		return arDate
+		return arDate2
 	}
 	// string type as default
 	return arString
