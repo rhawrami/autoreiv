@@ -1,0 +1,54 @@
+employee_id,name,age,salary,is_active,hire_date,department,notes
+1001,Alice Johnson,28,75000.50,true,2020-03-15,Engineering,"Works on backend systems, excellent performer"
+1002,Bob Smith,35,92000.00,true,2018-07-22,Sales,Lead sales representative
+1003,"Chen, Wei",42,105000.75,true,2015-01-10,Management,"Director of Operations, ""exceptional"" leadership"
+1004,Diana Prince,31,68000.00,false,2019-11-03,Marketing,Left for another opportunity
+1005,Edward ""Ed"" Martinez,29,71500.25,true,2021-06-18,Engineering,Junior developer
+1006,Fatima Hassan,38,88000.50,true,2017-09-05,Finance,Senior accountant
+1007,George Taylor,45,125000.00,true,2012-04-30,Management,Chief Technology Officer
+1008,Hannah Lee,26,62000.00,true,2022-02-14,Marketing,"Social media specialist
+Handles multiple platforms"
+1009,Ivan Petrov,33,79000.75,true,2019-08-21,Engineering,Full-stack developer
+1010,Julia Rodriguez,40,95000.00,false,2016-12-01,Sales,Retired early
+1011,Kevin O'Brien,52,115000.00,true,2010-03-17,Management,VP of Product Development
+1012,Lisa Thompson,27,64000.25,true,2022-05-09,Marketing,Content writer and strategist
+1013,Mohamed Ali,36,82000.50,true,2018-11-28,Engineering,DevOps engineer
+1014,Nina Patel,44,98000.75,true,2014-08-15,Finance,Controller
+1015,Oliver Zhang,30,73000.00,true,2020-09-23,Engineering,Frontend specialist
+1016,"Park, Ji-Woo",39,87000.25,true,2017-02-11,Sales,Account manager for APAC region
+1017,Quinn Martinez,25,58000.00,true,2023-01-30,Marketing,Junior graphic designer
+1018,Rachel Green,41,102000.50,true,2015-06-07,Management,Director of Human Resources
+1019,Samuel ""Sam"" Kim,34,76000.75,true,2019-04-19,Engineering,"Backend developer
+Specializes in microservices"
+1020,Tanya Ivanova,48,108000.00,true,2013-10-22,Finance,Chief Financial Officer
+1021,Umar Khan,32,70000.25,true,2020-12-08,Engineering,QA automation engineer
+1022,Victoria Brown,29,66000.50,false,2021-07-14,Sales,Moved to competitor
+1023,William Davis,37,85000.75,true,2018-03-26,Engineering,Senior software architect
+1024,Xiomara Lopez,43,94000.00,true,2016-05-18,Management,Director of Customer Success
+1025,Yuki Tanaka,31,72000.25,true,2020-08-05,Marketing,"Digital marketing manager, focuses on SEO/SEM"
+1026,Zara Ahmed,26,61000.50,true,2022-11-21,Finance,Financial analyst
+1027,Andrew Mitchell,50,118000.75,true,2011-02-14,Management,Senior VP of Operations
+1028,Bianca Rossi,28,67000.00,true,2021-09-30,Sales,Inside sales representative
+1029,Carlos Mendez,35,80000.25,true,2019-01-16,Engineering,Mobile app developer
+1030,Devi Sharma,46,99000.50,true,2014-12-03,Finance,Tax compliance manager
+1031,Ethan Wright,33,74000.75,true,2020-06-11,Engineering,Data engineer
+1032,Fiona McCarthy,38,89000.00,true,2017-07-28,Sales,Enterprise sales manager
+1033,Gabriel Santos,27,65000.25,true,2022-04-06,Marketing,Email marketing specialist
+1034,Helena Novak,42,96000.50,true,2015-11-19,Management,"Director of Strategy, reports to CEO"
+1035,Isaac Cohen,30,71000.75,true,2021-02-25,Engineering,Cloud infrastructure engineer
+1036,Jasmine Williams,36,84000.00,true,2018-10-12,Finance,Senior financial analyst
+1037,Klaus Schmidt,49,112000.25,true,2012-08-09,Management,VP of Engineering
+1038,Layla Hassan,25,59000.50,false,2023-03-17,Marketing,Resigned after 9 months
+1039,Marcus Johnson,34,77000.75,true,2019-06-22,Engineering,Security engineer
+1040,Nora Andersen,40,91000.00,true,2016-09-14,Sales,"Sales operations manager
+Handles CRM and analytics"
+1041,Oscar Reyes,32,73000.25,true,2020-11-07,Engineering,Machine learning engineer
+1042,Priya Gupta,37,86000.50,true,2018-02-20,Finance,Investment analyst
+1043,Quincy Adams,45,103000.75,true,2014-07-16,Management,Director of Business Development
+1044,Rosa Martinez,29,68000.00,true,2021-12-02,Marketing,Brand manager
+1045,Stefan Kowalski,41,93000.25,true,2016-04-25,Engineering,Principal engineer
+1046,Tatiana Volkov,35,81000.50,true,2019-03-08,Sales,Regional sales director
+1047,Ulysses Grant,28,66000.75,true,2022-01-19,Engineering,Junior data scientist
+1048,Valentina Cruz,39,88000.00,true,2017-11-30,Finance,Payroll manager
+1049,Walter White,47,107000.25,true,2013-05-23,Management,"VP of Sales, ""drives revenue growth"""
+1050,Xander Kim,31,72000.50,true,2020-10-15,Engineering,API developer
