@@ -15,27 +15,40 @@ func (m NullMap) Len() int {
 //
 // Assumes record at `i` exists
 func (m NullMap) IsNull(i int) bool {
-	// find which byte contains corresponding bit, and corresponding bit offset
-	// e.g., find if column record at idx 10 is null:
-	// 1. find that col idx 10 is in byte idx 1
-	// 2. shift byte idx 1 by 2 units to get bit position 2
-	// 3. return true if bit value is zero
 	byteIdx, shiftBy := i/8, i%8
-	return (m[byteIdx]>>shiftBy)&1 == 0
+	ogVal, valIfNull := m[byteIdx], m[byteIdx]&^(1<<shiftBy)
+	return ogVal == valIfNull
 }
 
 // SetNull sets a corresponding column record to null
-//
-// if already null, does nothing
 func (m NullMap) SetNull(i int) {
-	// find position of within-map byte and within-byte bit
 	byteIdx, shiftBy := i/8, i%8
-	m[byteIdx] = m[byteIdx] + (1 << shiftBy)
+	m[byteIdx] = m[byteIdx] &^ (1 << shiftBy)
 }
 
 // SetNotNull sets a corresponding column record to not-null
 func (m NullMap) SetNotNull(i int) {
-	// find position of within-map byte and within-byte bit
 	byteIdx, shiftBy := i/8, i%8
-	m[byteIdx] = m[byteIdx] + (1 << shiftBy)
+	m[byteIdx] = m[byteIdx] | (1 << shiftBy)
+}
+
+// NewNullMapFromBool returns a new NullMap, taking in a
+// bool slice as input.
+func NewNullMapFromBool(b []bool) NullMap {
+	// more likely than not to not be div by 8
+	// add remainder first, subtract if needed
+	lenMap := len(b)/8 + 1
+	if len(b)%8 == 0 {
+		lenMap = lenMap - 1
+	}
+
+	m := make(NullMap, lenMap)
+	for i := 0; i < len(b); i++ {
+		if b[i] {
+			bIdx, shiftBy := i/8, i%8
+			// flip zero bit
+			m[bIdx] = m[bIdx] | (1 << shiftBy)
+		}
+	}
+	return m
 }
